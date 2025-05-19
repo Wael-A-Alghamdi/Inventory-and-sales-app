@@ -67,7 +67,7 @@ No external database server needed — this is self-contained.
 
 ---
 
-## 🔒 Notes
+## ⚠️ Notes
 
 - All UI is built using JavaFX with separate `.fxml` files.
 - Controllers follow an MVC-like pattern.
