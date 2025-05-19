@@ -4,7 +4,7 @@ This is a desktop application built with Java and JavaFX that simulates a full i
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - Java 8+  
 - JavaFX (with FXML)  
@@ -13,16 +13,16 @@ This is a desktop application built with Java and JavaFX that simulates a full i
 
 ---
 
-## 🧩 Core Features
+##  Core Features
 
-### 🔐 Admin Module
+###  Admin Module
 - Admin login page (`AdminLogin.fxml`)
 - Admin dashboard (`AdminMainPage.fxml`)
 - Manage cashier accounts (`InsertCashers.fxml`)
 - View storage and inventory status (`MainProjStorage.fxml`)
 - Generate and view reports (`ReportInput.fxml`, `ReportShow.fxml`)
 
-### 💳 Cashier Module
+###  Cashier Module
 - Cashier login and access screen (`CashierMainScreen.fxml`)
 - Product selection and cart system
 - Order summary page (`OrderSummary.fxml`)
@@ -31,19 +31,19 @@ This is a desktop application built with Java and JavaFX that simulates a full i
   - Card (`PaymentMethodCard.fxml`)
 - Real-time order and product handling
 
-### 📦 Inventory & Storage
+###  Inventory & Storage
 - Add/edit/remove products in storage
 - View storage table (`MainProjStorageController.java`, `StorageTableView.java`)
 - Syncs directly with the database via JavaFX TableViews
 
-### 🧾 Reports
+###  Reports
 - Admin can input filters to generate specific reports
 - Display results using `TableView`
 - Uses model classes like `Report.java`, `Order.java`, and `OrderSummaryController.java`
 
 ---
 
-## 🗃️ Database Structure
+##  Database Structure
 
 - Local SQLite database file: `SAS.db`
 - Stores data for:
@@ -57,7 +57,7 @@ No external database server needed — this is self-contained.
 
 ---
 
-## 📝 Usage
+##  Usage
 
 1. Open the project in an IDE like IntelliJ IDEA or Eclipse.
 2. Make sure JavaFX libraries are correctly linked.
@@ -67,7 +67,7 @@ No external database server needed — this is self-contained.
 
 ---
 
-## ⚠️ Notes
+##  Notes
 
 - All UI is built using JavaFX with separate `.fxml` files.
 - Controllers follow an MVC-like pattern.
