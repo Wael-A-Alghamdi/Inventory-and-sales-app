@@ -1,0 +1,77 @@
+.text-field {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.text-field:focused {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+
+
+
+#b2{
+    -fx-text-fill: white;
+    -fx-font-family: "Bodoni MT";
+   
+   -fx-background-color: #A599B6;
+}
+
+#b2:hover{     
+        -fx-text-fill: #A599B6;
+
+  -fx-background-color:#f6f5fb;
+  
+
+}
+#btnLogin{
+    -fx-text-fill: Black;
+    -fx-font-family: "Lucida Bright";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+}
+#btnLogin:hover{
+    -fx-text-fill: #8d5cd0;
+    -fx-font-family: "Lucida Bright";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+}
+#btn{
+    -fx-text-fill: white;
+    -fx-font-family: "Lucida Bright";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #A599B6;
+}
+#btn:hover{
+    -fx-text-fill: white;
+    -fx-font-family: "Lucida Bright";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #70626f;
+}
+#btnOut{
+    -fx-text-fill: white;
+    -fx-font-family: "Lucida Bright";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color:  #8d5cd0;
+}
+#btnOut:hover{
+    -fx-text-fill: white;
+    -fx-font-family: "Lucida Bright";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #70626f;
+}
+#txt{
+    -fx-text-fill: #70626f;
+    -fx-font-family: "Lucida Bright";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+}
+

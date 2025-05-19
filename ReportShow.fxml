@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="501.0" prefWidth="736.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.ReportShowController">
+   <children>
+      <TableView fx:id="cbReport" layoutX="15.0" layoutY="160.0" prefHeight="327.0" prefWidth="706.0" style="-fx-effect: dropshadow(three-pass-box, purple, 10, 0, 0, 0);">
+         <columns>
+            <TableColumn fx:id="colTopic" prefWidth="176.0" text="Topic" />
+            <TableColumn fx:id="colContent" prefWidth="528.0" text="Content" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="11.0" prefHeight="134.0" prefWidth="736.0" style="-fx-background-color: linear-gradient(to bottom, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #c2cfee, #d2dbf0, #dfe3f4, #ebecf7, #f6f5fb, #ffffff);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="23.0" layoutY="-8.0" prefHeight="109.0" prefWidth="107.0" style="-fx-text-fill: linear-gradient(to bottom, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #c2cfee, #d2dbf0, #dfe3f4, #ebecf7, #f6f5fb, #ffffff);" text="S+" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="-8.0">
+               <font>
+                  <Font name="Bodoni MT" size="84.0" />
+               </font>
+            </Label>
+            <Label layoutX="311.0" layoutY="34.0" text="Reports">
+               <font>
+                  <Font name="Lucida Bright Regular" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

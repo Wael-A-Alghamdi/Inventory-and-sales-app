@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="484.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.MainProjStorageController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="943.0" style="-fx-background-color: linear-gradient(to bottom, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #c2cfee, #d2dbf0, #dfe3f4, #ebecf7, #f6f5fb, #ffffff);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="361.0" layoutY="18.0" prefHeight="38.0" prefWidth="162.0" text="Storage Page">
+               <font>
+                  <Font name="Bodoni MT Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="-22.0" prefHeight="118.0" prefWidth="105.0" style="-fx-text-fill: linear-gradient(to bottom, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #c2cfee, #d2dbf0, #dfe3f4, #ebecf7, #f6f5fb, #ffffff);" text="S+" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="738.0" AnchorPane.topAnchor="-22.0">
+               <font>
+                  <Font name="Bodoni MT" size="84.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutY="100.0" prefHeight="386.0" prefWidth="884.0">
+        <columns>
+            <TableColumn fx:id="colID" minWidth="9.0" prefWidth="104.0" text="ID" />
+          <TableColumn fx:id="colItem_Name" minWidth="9.0" prefWidth="215.0" text="Item_Name" />
+          <TableColumn fx:id="colItem_Code" prefWidth="216.0" text="Item_Code" />
+            <TableColumn fx:id="colItem_Quantity" prefWidth="170.0" text="Item_Quantity" />
+            <TableColumn fx:id="colItem_Price" prefWidth="178.0" text="Item_Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

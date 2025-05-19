@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="517.0" prefWidth="1218.0" style="-fx-background-color: linear-gradient(to bottom, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #f6f5fb, #f6f5fb, #f6f5fb, #ffffff, #f6f5fb, #ffffff);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.AdminMainPageController">
+   <children>
+      <Button id="btnLogin" fx:id="btnAdminLogout" layoutX="617.0" layoutY="14.0" mnemonicParsing="false" onAction="#AdminLogout" prefHeight="33.0" prefWidth="137.0" style="-fx-background-radius: 4em;" stylesheets="@Stylesheet.css" text="Logout" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Bodoni MT" size="16.0" />
+         </font>
+      </Button>
+      <Button id="btn" fx:id="btnShowReports" layoutX="14.0" layoutY="470.0" mnemonicParsing="false" onAction="#ShowReports" prefHeight="33.0" prefWidth="144.0" style="-fx-background-radius: 4em;" stylesheets="@Stylesheet.css" text="Show Reports">
+         <font>
+            <Font name="Bodoni MT" size="16.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="btnComb" layoutX="30.0" layoutY="112.0" onAction="#Select" prefHeight="25.0" prefWidth="164.0" promptText="Update Item" style="-fx-background-color: #f6f5fb;" visibleRowCount="100" />
+      <Label layoutX="31.0" layoutY="74.0" prefHeight="29.0" prefWidth="66.0" text="Select ">
+         <font>
+            <Font name="Bodoni MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <BorderPane fx:id="BPaneAdd" layoutX="201.0" layoutY="112.0" prefHeight="300.0" prefWidth="450.0" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="567.0" AnchorPane.topAnchor="112.0">
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: linear-gradient(to right, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #c2cfee, #d2dbf0, #dfe3f4, #ebecf7, #f6f5fb, #ffffff)linear-gradient(to right, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #c2cfee, #d2dbf0, #dfe3f4, #ebecf7, #f6f5fb, #ffffff);" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="295.0" prefWidth="445.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <TextField fx:id="txtItemNameAdd" layoutX="153.0" layoutY="77.0" prefHeight="25.0" prefWidth="283.0" stylesheets="@Stylesheet.css" />
+                        <Label layoutX="14.0" layoutY="14.0" text="Add Item">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="4.0" layoutY="75.0" text="Item Name:" AnchorPane.leftAnchor="4.0">
+                           <font>
+                              <Font name="Bodoni MT" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1.0" layoutY="168.0" text="Item Quantity:" AnchorPane.leftAnchor="1.0">
+                           <font>
+                              <Font name="Bodoni MT" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="5.0" layoutY="211.0" text="Item Price:" AnchorPane.leftAnchor="5.0">
+                           <font>
+                              <Font name="Bodoni MT" size="22.0" />
+                           </font>
+                        </Label>
+                        <Button id="btnOut" layoutX="326.0" layoutY="250.0" mnemonicParsing="false" onAction="#AddItem" prefHeight="33.0" prefWidth="100.0" style="-fx-background-radius: 4em;" stylesheets="@Stylesheet.css" text="Add" textFill="WHITE">
+                           <font>
+                              <Font name="Bodoni MT" size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtItemCodeAdd" layoutX="153.0" layoutY="125.0" prefHeight="25.0" prefWidth="283.0" stylesheets="@Stylesheet.css" />
+                        <Label layoutX="3.0" layoutY="124.0" text="Item Code: " AnchorPane.leftAnchor="3.0">
+                           <font>
+                              <Font name="Bodoni MT" size="22.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtItemQuantityAdd" layoutX="153.0" layoutY="169.0" prefHeight="25.0" prefWidth="283.0" stylesheets="@Stylesheet.css" />
+                        <TextField fx:id="txtItemPriceAdd" layoutX="153.0" layoutY="212.0" prefHeight="25.0" prefWidth="283.0" stylesheets="@Stylesheet.css" />
+                        <Label fx:id="lblMassageAdd" alignment="CENTER" layoutX="161.0" layoutY="30.0" prefHeight="39.0" prefWidth="267.0" textFill="#8f7ab5">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <Label layoutX="48.0" layoutY="-21.0" prefHeight="83.0" prefWidth="110.0" style="-fx-text-fill: linear-gradient(to bottom, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #c2cfee, #d2dbf0, #dfe3f4, #ebecf7, #f6f5fb, #ffffff);" text="S+">
+         <font>
+            <Font name="Bodoni MT" size="84.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="659.0" layoutY="109.0" prefHeight="300.0" prefWidth="494.0" style="-fx-background-color: #f6f5fb;" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="670.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="112.0">
+         <columns>
+            <TableColumn fx:id="colID" minWidth="9.0" prefWidth="30.0" text="ID" />
+            <TableColumn fx:id="colItem_Name" minWidth="9.0" prefWidth="291.0" text="Item_Name" />
+            <TableColumn fx:id="colItem_Code" prefWidth="65.0" text="Item_Code" />
+            <TableColumn fx:id="colItem_Quantity" prefWidth="87.0" text="Item_Quantity" />
+            <TableColumn fx:id="colItem_Price" prefWidth="64.0" text="Item_Price" />
+         </columns>
+      </TableView>
+      <Button id="btn" fx:id="btnRefresh" layoutX="1024.0" layoutY="419.0" mnemonicParsing="false" onAction="#Refresh" prefHeight="33.0" prefWidth="87.0" style="-fx-background-radius: 4em;" stylesheets="@Stylesheet.css" text="Refresh">
+         <font>
+            <Font name="Bodoni MT" size="16.0" />
+         </font>
+      </Button>
+      <Button id="btn" fx:id="btnAddCashers" layoutX="165.0" layoutY="470.0" mnemonicParsing="false" onAction="#AddCashers" prefHeight="33.0" prefWidth="144.0" style="-fx-background-radius: 4em;" stylesheets="@Stylesheet.css" text="Add Cashers">
+         <font>
+            <Font name="Bodoni MT" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="668.0" layoutY="75.0" text="Enter Item Code">
+         <font>
+            <Font name="Bodoni MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField id="txt" fx:id="txtItemCode" layoutX="832.0" layoutY="72.0" prefHeight="25.0" prefWidth="286.0" style="-fx-background-radius: 2em;" stylesheets="@Stylesheet.css" />
+      <Button id="btn" fx:id="btnSearch" layoutX="1124.0" layoutY="68.0" mnemonicParsing="false" onAction="#Search" prefHeight="33.0" prefWidth="80.0" style="-fx-background-radius: 4em;" stylesheets="@Stylesheet.css" text="Search">
+         <font>
+            <Font name="Bodoni MT" size="16.0" />
+         </font>
+      </Button>
+      <Button id="btn" fx:id="btnDelete" layoutX="1118.0" layoutY="419.0" mnemonicParsing="false" onAction="#Delete" prefHeight="33.0" prefWidth="80.0" style="-fx-background-radius: 4em;" stylesheets="@Stylesheet.css" text="Delete">
+         <font>
+            <Font name="Bodoni MT" size="16.0" />
+         </font>
+      </Button>
+      <BorderPane fx:id="BPaneUpdate" layoutX="211.0" layoutY="122.0" prefHeight="300.0" prefWidth="450.0" AnchorPane.bottomAnchor="105.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="567.0" AnchorPane.topAnchor="112.0">
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="450.0" style="-fx-background-color: linear-gradient(to right, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #c2cfee, #d2dbf0, #dfe3f4, #ebecf7, #f6f5fb, #ffffff)linear-gradient(to right, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #c2cfee, #d2dbf0, #dfe3f4, #ebecf7, #f6f5fb, #ffffff);" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="295.0" prefWidth="445.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <children>
+                        <TextField fx:id="txtItemNameUpdare" layoutX="153.0" layoutY="77.0" prefHeight="25.0" prefWidth="283.0" stylesheets="@Stylesheet.css" />
+                        <Label layoutX="14.0" layoutY="14.0" text="Update Item">
+                           <font>
+                              <Font name="Bodoni MT Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="4.0" layoutY="75.0" text="Item Name:" AnchorPane.leftAnchor="4.0">
+                           <font>
+                              <Font name="Bodoni MT" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1.0" layoutY="168.0" text="Item Quantity:" AnchorPane.leftAnchor="1.0">
+                           <font>
+                              <Font name="Bodoni MT" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="5.0" layoutY="211.0" text="Item Price:" AnchorPane.leftAnchor="5.0">
+                           <font>
+                              <Font name="Bodoni MT" size="22.0" />
+                           </font>
+                        </Label>
+                        <Button id="btnOut" layoutX="262.0" layoutY="250.0" mnemonicParsing="false" onAction="#UpdateItem" prefHeight="33.0" prefWidth="164.0" style="-fx-background-radius: 4em;" stylesheets="@Stylesheet.css" text="Save And Update" textFill="WHITE">
+                           <font>
+                              <Font name="Bodoni MT" size="16.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtItemCodeUpdate" layoutX="153.0" layoutY="125.0" prefHeight="25.0" prefWidth="283.0" stylesheets="@Stylesheet.css" />
+                        <Label layoutX="3.0" layoutY="124.0" text="Item Code: " AnchorPane.leftAnchor="3.0">
+                           <font>
+                              <Font name="Bodoni MT" size="22.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtItemQuantityUpdate" layoutX="153.0" layoutY="169.0" prefHeight="25.0" prefWidth="283.0" stylesheets="@Stylesheet.css" />
+                        <TextField fx:id="txtItemPriceUpdate" layoutX="153.0" layoutY="212.0" prefHeight="25.0" prefWidth="283.0" stylesheets="@Stylesheet.css" />
+                        <Label fx:id="lblMassageUpdate" alignment="CENTER" layoutX="161.0" layoutY="30.0" prefHeight="39.0" prefWidth="267.0" textFill="#8f7ab5">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <Button id="btn" fx:id="btnUpdate" layoutX="670.0" layoutY="419.0" mnemonicParsing="false" onAction="#Update" prefHeight="33.0" prefWidth="144.0" style="-fx-background-radius: 4em;" stylesheets="@Stylesheet.css" text="Update">
+         <font>
+            <Font name="Bodoni MT" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
